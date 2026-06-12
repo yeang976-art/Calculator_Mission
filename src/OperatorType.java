@@ -1,7 +1,7 @@
 import java.util.function.DoubleBinaryOperator;
 
 public enum OperatorType {
-    AD('+',(a,b)-> a + b),
+    AD('+', Double::sum),
     SB('-',(a,b)-> a - b),
     MT('*',(a,b)-> a * b),
     DV('/',(a,b)-> {
